@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+body{
+    background: #001;
+    display: flex;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;   
+    padding-bottom: 20px;
+}
+.profile .img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.profile .img-box img{
+    width: 100%;
+}
+.profile h2{
+    font-size: 20px;
+}
+.menu{
+    width: 60px;
+    height: 100vh;
+    background: #123;
+    padding: 20px;
+    border-radius: 0 6px 6px 0;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0;
+    gap: 40px;
+    transition: .5s;
+}
+
+ul li a:hover, .active, .data-info .card:hover, td:hover{
+    background-color: #ffffff55;
+}
+
+ul li a i{
+    font-size: 30px;
+}
+
+ul li a p{
+    font-weight: 700;
+}
+
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: .5s;
+}
+
+.log-out a{
+    background: #a00;
+}
+
+.content {
+    margin: 10px;
+    width: 100%;
+}
+
+.content .title-info{
+    background-color: #0481ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.data-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .card{
+    background: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+}
+.data-info .card i{
+    font-size: 40px;
+}
+
+.user-info{
+    text-align: center;
+}
+.user-info span{
+    font-size: 25px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+td, th{
+    background-color: #123;
+    border-radius: 8px;
+    height: 40px;
+    transition: .4s;
+}
+th{
+    background-color: #0481ff;
+}
+td{
+    cursor: pointer;
+}
+.price, .count{
+    padding: 6px;
+    border-radius: 8px;
+}
+.price{
+    background-color: #00ec0c;
+}
+.count{
+    background-color: #dcec00;
+    color: #000;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000;
+    background-color: #0481ff;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
